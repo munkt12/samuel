@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Poppins, Arial, sans-serif;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(133, 126, 127, 0.85);
+            padding: 18px;
+            text-align: center;
+            backdrop-filter: blur(3px);
+        }
+
+        header a {
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            color: rgb(13, 150, 202);
+        }
+
+        header a:hover {
+            color: black;
+        }
+
+        .contact-container {
+            max-width: 700px;
+            margin: 70px auto;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .contact-container h1 {
+            color: #222;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            font-size: 17px;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 12px;
+        }
+
+        .contact-form label {
+            text-align: left;
+            font-size: 15px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #999;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .contact-form button {
+            margin-top: 12px;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            background: #0077b6;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background: #0d0d0e;
+        }
+
+        footer {
+            background-color: #8892b034;
+            text-align: center;
+            width: 100%;
+            padding: 1.5rem 0;
+            color: white;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            font-weight: bold;
+            color: white;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons div {
+            display: inline-block;
+            margin: 0 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .social-icons img {
+            display: block;
+            margin: 0 auto 5px auto;
+        }
+    </style>
+</head>
+
+<body background="so2.jpg">
+
+    <header>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+    </header>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+
+        <form action="" class="contact-form">
+
+            <label>First Name</label>
+            <input type="text" required>
+
+            <label>Last Name</label>
+            <input type="text">
+
+            <label>Email Address</label>
+            <input type="email" required>
+
+            <label>Comment / Questions</label>
+            <textarea name="comment" required></textarea>
+
+            <button type="submit" onclick="showMessage()">Send Message</button>
+            
+        </form>
+    </div>
+
+    <footer id="contact">
+        
+
+        <div class="social-icons">
+
+            
+
+            <div>
+                <a href="" target="_blank">
+                    <img src="instagram.jpg" alt="Instagram" width="70" height="60">
+                </a>
+                Instagram
+            </div>
+
+            <div>
+                <a href="" target="_blank">
+                    <img src="telegram.jpg" alt="Telegram" width="70" height="60">
+                </a>
+                Telegram
+            </div>
+
+        </div>
+
+        <p class="copyright">© 2025 SAMUEL ELIAS</p>
+    </footer>
+
+    
+
+</body>
+</html>
